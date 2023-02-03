@@ -43,6 +43,7 @@ const handleHouseCostChange = (e: React.FormEvent<HTMLInputElement>) => {
   return (
 
   <div>
+    <h1>Mortgage Calculator</h1>
     <label>
       <span>Interest Rate</span> 
       <input onChange={handleInterestChange} type="range" min="0" max="20" step="0.1" value={interest} className="InterestRate"></input>
