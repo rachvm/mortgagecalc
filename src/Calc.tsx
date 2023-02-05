@@ -64,7 +64,7 @@ const handleHouseCostChange = (e: React.FormEvent<HTMLInputElement>) => {
       <input data-testid="houseCost" onChange={handleHouseCostChange} type="textarea" className="years"></input> 
     </label>
     <br/>
-    <button onClick={handleClick} type="button">Click To Calculate</button>
+    <button className="button-1" onClick={handleClick} type="button">Click To Calculate</button>
     <h2 data-testid="monthly">Monthly Payments: £{monthlypay}</h2>
     </div>
   </div>
