@@ -1,6 +1,5 @@
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import React from 'react';
 import Calc from './Calc';
 
 test('tests the page loads with the correct text content', () => {

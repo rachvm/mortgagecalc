@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react"
+import './App.css'
 
 
  export default function Calc() {
@@ -42,8 +43,9 @@ const handleHouseCostChange = (e: React.FormEvent<HTMLInputElement>) => {
 
   return (
 
-  <div>
-    <h1>Mortgage Calculator</h1>
+  <div className="mortgage">
+    <h1 >Mortgage Calculator</h1>
+    <div className="calc">
     <label>
       <span>Interest Rate</span> 
       <input onChange={handleInterestChange} type="range" min="0" max="20" step="0.1" value={interest} className="InterestRate"></input>
@@ -64,6 +66,7 @@ const handleHouseCostChange = (e: React.FormEvent<HTMLInputElement>) => {
     <br/>
     <button onClick={handleClick} type="button">Click To Calculate</button>
     <h2 data-testid="monthly">Monthly Payments: £{monthlypay}</h2>
+    </div>
   </div>
 
 
